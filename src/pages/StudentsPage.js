@@ -91,16 +91,16 @@ export default function StudentsPage() {
     }
   };
 
-  const deleteStudent = async (id) => {
-    try {
-      await API.delete(`/students/${deleteStudentData._id}`);
-      toast.success("Student deleted");
-      setDeleteStudentData(null);
-      fetchStudents();
-    } catch {
-      toast.error("Delete failed");
-    }
-  };
+  // const deleteStudent = async (id) => {
+  //   try {
+  //     await API.delete(`/students/${deleteStudentData._id}`);
+  //     toast.success("Student deleted");
+  //     setDeleteStudentData(null);
+  //     fetchStudents();
+  //   } catch {
+  //     toast.error("Delete failed");
+  //   }
+  // };
 
   return (
     <Layout>
